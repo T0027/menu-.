@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菜单 menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 首页内容 -->
+    <header>
+        <h1>欢迎进入此空间</h1>
+        <p>这素姐妹二人的自留款，不出。</p>
+    </header>
+
+    <!-- 图片展示区 -->
+    <section id="gallery">
+        <h2>回忆篇</h2>
+
+        <!-- 风景类图片 -->
+        <div class="image-category" id="landscape-category">
+            <h3>哼哼知道你肖想很久，现放生关于你的部分</h3>
+            <div class="gallery-container" id="landscape-container">
+                <!-- 动态加载图片 -->
+            </div>
+            <div class="pagination">
+                <button id="landscape-prev">上一页</button>
+                <button id="landscape-next">下一页</button>
+            </div>
+        </div>
+
+        <!-- 人物类图片 -->
+        <div class="image-category" id="person-category">
+            <h3>姐妹合照~妈呀也太少...!未来必须找人24小时跟拍：与lcc&wyt同行</h3>
+            <div class="gallery-container" id="person-container">
+                <!-- 动态加载图片 -->
+            </div>
+            <div class="pagination">
+                <button id="person-prev">上一页</button>
+                <button id="person-next">下一页</button>
+            </div>
+        </div>
+
+        <!-- 其他类图片 -->
+        <div class="image-category" id="other-category">
+            <h3>这是为大王全网搜罗的好物 #猜您喜欢</h3>
+            <div class="gallery-container" id="other-container">
+                <!-- 动态加载图片 -->
+            </div>
+            <div class="pagination">
+                <button id="other-prev">上一页</button>
+                <button id="other-next">下一页</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 留言板 -->
+    <section id="guestbook">
+        <h2>留言区</h2>
+        <form id="guestbook-form" action="https://formspree.io/f/xldekqpy" method="POST">
+            <label for="name">你素:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="message">想说虾米:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">biu</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
